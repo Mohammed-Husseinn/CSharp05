@@ -54,3 +54,31 @@ class Program
         Console.WriteLine(book.Title);
     }
 }
+
+
+// Question 4
+using System;
+
+enum Genre
+{
+    Fiction,
+    NonFiction,
+    Science
+}
+
+class Book
+{
+    public Genre BookGenre { get; set; }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Book book = new Book();
+
+        book.BookGenre = Genre.Science;
+
+        Console.WriteLine(book.BookGenre);
+    }
+}
