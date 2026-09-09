@@ -149,3 +149,26 @@ class Program
         Console.WriteLine(genreText);
     }
 }
+
+
+// Question 8
+using System;
+
+enum Genre
+{
+    Fiction,
+    NonFiction,
+    Science
+}
+
+class Program
+{
+    static void Main()
+    {
+        string genreText = "Science";
+
+        Genre genre = (Genre)Enum.Parse(typeof(Genre), genreText);
+
+        Console.WriteLine(genre);
+    }
+}
