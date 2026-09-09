@@ -126,3 +126,26 @@ class Program
     }
 }
 
+
+// Question 7
+
+using System;
+
+enum Genre
+{
+    Fiction,
+    NonFiction,
+    Science
+}
+
+class Program
+{
+    static void Main()
+    {
+        Genre genre = Genre.Fiction;
+
+        string genreText = genre.ToString();
+
+        Console.WriteLine(genreText);
+    }
+}
