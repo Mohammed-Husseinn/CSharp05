@@ -103,3 +103,26 @@ class Program
         Console.WriteLine((int)Genre.Science);
     }
 }
+
+// Question 6
+using System;
+
+enum Genre
+{
+    Fiction,
+    NonFiction,
+    Science
+}
+
+class Program
+{
+    static void Main()
+    {
+        int genreNumber = 1;
+
+        Genre genre = (Genre)genreNumber;
+
+        Console.WriteLine(genre);
+    }
+}
+
