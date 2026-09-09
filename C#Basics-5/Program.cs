@@ -34,3 +34,23 @@ class Program
         Console.WriteLine(book.copiesInStock);
     }
 }
+
+
+// Question 3
+using System;
+
+class Book
+{
+    public string Title;
+}
+
+class Program
+{
+    static void Main()
+    {
+        Book book = new Book();
+
+        book.Title = "C# Basics";
+        Console.WriteLine(book.Title);
+    }
+}
