@@ -172,3 +172,32 @@ class Program
         Console.WriteLine(genre);
     }
 }
+
+// Question 9
+
+using System;
+
+enum Genre
+{
+    Fiction,
+    NonFiction,
+    Science
+}
+
+class Program
+{
+    static void Main()
+    {
+        string genreText = "Mystery";
+        Genre genre;
+
+        if (Enum.TryParse<Genre>(genreText, out genre))
+        {
+            Console.WriteLine(genre);
+        }
+        else
+        {
+            Console.WriteLine("Unknown genre");
+        }
+    }
+}
