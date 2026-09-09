@@ -82,3 +82,24 @@ class Program
         Console.WriteLine(book.BookGenre);
     }
 }
+
+// Question 5
+
+using System;
+
+enum Genre
+{
+    Fiction,
+    NonFiction,
+    Science
+}
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine((int)Genre.Fiction);
+        Console.WriteLine((int)Genre.NonFiction);
+        Console.WriteLine((int)Genre.Science);
+    }
+}
